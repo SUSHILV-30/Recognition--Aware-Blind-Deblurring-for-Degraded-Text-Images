@@ -16,7 +16,7 @@ const FINDINGS = [
 
 const ROADMAP = [
   ['Wire the CTC loss through the recognizer into the deblurring weights', 'First end-to-end Restormer + TrOCR run with CER/WER'],
-  ['Run Phase 2 notebooks for Restormer Levels 7–10', 'Per-level and all-levels results beyond Level 6'],
+  ['Run the Restormer notebooks for HDC Levels 7–10', 'Per-level and all-levels results beyond Level 6'],
   ['Score Restormer fine-tuned Levels 1–4 and the other models with OCR', 'Fills the empty columns of the OCR table'],
   ['Train the physics-informed pipeline on Levels 6–9', 'Completes the Level 0–9 curve; the code already exists'],
   ['Fine-tune MPRNet and extend it to Steps 5–19', 'Turns the zero-shot control into a fine-tuned data point'],

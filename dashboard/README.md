@@ -1,9 +1,11 @@
 # Project dashboard
 
-A single-page React site that presents the whole project: the problem, the shared
-pipeline, all five sub-studies, the Phase 2 Restormer results for Levels 5–10, a
-side-by-side comparison of every model on the same samples, findings, progress and
-the team.
+A single-page React site that presents the whole project: the problem, the system
+architecture, the method, the five restoration models, a side-by-side comparison of every
+model on the same samples, OCR results, findings, progress and the team. Each model opens
+its own page (`#/models/<id>`) with its architecture, training recipe, every measured
+result and sample outputs; the Restormer page also carries the Phase 2 results for HDC
+Levels 5–10.
 
 Built with Vite, React 18 and Recharts. Every number on the page comes from the team's
 papers, slides or notebook outputs and lives in `src/data/project.js`; figures are in
@@ -34,15 +36,23 @@ folder can be served from any host or sub-path. The workflow in
 
 ```
 src/
-├── App.jsx                 Page order
-├── data/project.js         All measured results, team and paper list
+├── App.jsx                 Home page order and hash routing to model pages
+├── route.js                Hash router: #/models/<id> or a home section
+├── data/
+│   ├── project.js          All measured results, team and paper list
+│   └── models.js           The five models: card text, headline numbers, sparklines
 ├── components/
 │   ├── Hero.jsx            Interactive defocus specimen and headline numbers
 │   ├── Problem.jsx         Why OCR fails, dataset and pairing protocol
-│   ├── Pipeline.jsx        Shared pipeline, degradation model, RABD loss
-│   ├── Studies.jsx         Tabbed view of the five sub-studies
-│   ├── Phase2.jsx          Restormer Levels 5–10, Level 5 OCR results
+│   ├── Architecture.jsx    System diagram and per-model architecture tabs
+│   ├── diagrams.jsx        HTML/CSS architecture diagrams for each model
+│   ├── Pipeline.jsx        Method: degradation model, RABD loss, input anchoring
+│   ├── Models.jsx          Five model cards linking to their pages
+│   ├── ModelPage.jsx       Model page layout: hero, section nav, pager
+│   ├── modelkit.jsx        Shared blocks for model pages
+│   ├── models/             Content for each model page (Restormer includes Phase 2)
 │   ├── Compare.jsx         Same-sample grid across every model
+│   ├── Ocr.jsx             OCR accuracy by level and method
 │   ├── Findings.jsx        Findings, module status, roadmap, limitations
 │   ├── Team.jsx            Team, papers, footer
 │   ├── charts.jsx          Recharts wrappers that follow the theme

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { SectionHead, Swatch, useLightbox } from './ui.jsx'
 import { Trend } from './charts.jsx'
 import { HEX, gridMethods, gridSamples, img, mprnet, nafnet, restormerFt } from '../data/project.js'
+import { modelHref } from '../data/models.js'
 
 const crossLevel = ['L0', 'L1', 'L2', 'L3', 'L4'].map((level) => ({
   level,
@@ -12,13 +13,13 @@ const crossLevel = ['L0', 'L1', 'L2', 'L3', 'L4'].map((level) => ({
 }))
 
 const TABLE = [
-  ['Restormer, fine-tuned', HEX.ft, 'L1 → L4, fine-tuned', '24.88 → 15.24', 'SSIM up at every level'],
-  ['NAFNet, fine-tuned', HEX.naf, 'L1 → L4, fine-tuned', '12.59 → 13.06', '0.489 → 0.501'],
-  ['MPRNet, zero-shot', HEX.mpr, 'L0 → L4, 40 images', '22.12 → 12.93', '0.514 → 0.334'],
-  ['MPRNet on GoPro', HEX.mpr, 'Published, motion blur', '32.66', '0.959'],
-  ['Restormer from scratch', HEX.scratch, 'Steps 0–19, full image', '8.37 – 15.66', '0.207 – 0.388'],
-  ['HDC physics U-Net', HEX.hdc, 'Level 5, fine-tuned', '17.43', '0.589'],
-  ['Restormer, Phase 2', HEX.ft, 'Level 5, fine-tuned', '21.98', '0.582'],
+  ['Restormer, fine-tuned', HEX.ft, 'L1 → L4, fine-tuned', '24.88 → 15.24', 'SSIM up at every level', 'restormer'],
+  ['Restormer, fine-tuned', HEX.ft, 'Level 5, fine-tuned', '21.98', '0.582', 'restormer'],
+  ['NAFNet, fine-tuned', HEX.naf, 'L1 → L4, fine-tuned', '12.59 → 13.06', '0.489 → 0.501', 'nafnet'],
+  ['MPRNet, zero-shot', HEX.mpr, 'L0 → L4, 40 images', '22.12 → 12.93', '0.514 → 0.334', 'mprnet'],
+  ['MPRNet on GoPro', HEX.mpr, 'Published, motion blur', '32.66', '0.959', 'mprnet'],
+  ['Restormer from scratch', HEX.scratch, 'Steps 0–19, full image', '8.37 – 15.66', '0.207 – 0.388', 'scratch'],
+  ['HDC physics U-Net', HEX.hdc, 'Level 5, fine-tuned', '17.43', '0.589', 'physics'],
 ]
 
 function Grid() {
@@ -89,9 +90,9 @@ export default function Compare() {
               <table>
                 <thead><tr><th>Method</th><th>Scope</th><th className="num">PSNR (dB)</th><th className="num">SSIM</th></tr></thead>
                 <tbody>
-                  {TABLE.map(([m, c, scope, p, s]) => (
+                  {TABLE.map(([m, c, scope, p, s, id]) => (
                     <tr key={m + scope}>
-                      <td><span className="method-cell"><Swatch color={c} />{m}</span></td>
+                      <td><a className="method-cell row-link" href={modelHref(id)}><Swatch color={c} />{m}</a></td>
                       <td className="muted">{scope}</td>
                       <td className="num">{p}</td>
                       <td className="num">{s}</td>
