@@ -3,9 +3,9 @@ import { useTheme } from './ui.jsx'
 
 export const SECTIONS = [
   ['problem', 'Problem'],
-  ['pipeline', 'Pipeline'],
-  ['studies', 'Studies'],
-  ['phase2', 'Phase 2'],
+  ['architecture', 'Architecture'],
+  ['method', 'Method'],
+  ['models', 'Models'],
   ['compare', 'Compare'],
   ['ocr', 'OCR'],
   ['findings', 'Findings'],
@@ -13,11 +13,13 @@ export const SECTIONS = [
   ['team', 'Team'],
 ]
 
-export default function Nav() {
+export default function Nav({ page }) {
   const [active, setActive] = useState(null)
   const { isDark, toggle } = useTheme()
 
   useEffect(() => {
+    setActive(page === 'model' ? 'models' : null)
+    if (page !== 'home') return
     const io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) if (e.isIntersecting) setActive(e.target.id)
@@ -29,7 +31,7 @@ export default function Nav() {
       if (el) io.observe(el)
     }
     return () => io.disconnect()
-  }, [])
+  }, [page])
 
   return (
     <nav className="nav" aria-label="Sections">

@@ -1,40 +1,16 @@
 import { Figure, SectionHead } from './ui.jsx'
 import { img } from '../data/project.js'
 
-const STAGES = [
-  ['Blurred page', 'Defocused text image'],
-  ['Preprocessing', 'Normalise, CLAHE, unsharp mask'],
-  ['Blind deblurring', 'Restormer, NAFNet, MPRNet, Uformer or HDC U-Net', true],
-  ['Text detection', 'Feature Pyramid Network'],
-  ['Recognition', 'CRNN or TrOCR'],
-  ['Post-processing', 'Spell-check, LM rescoring'],
-]
-
 export default function Pipeline() {
   return (
-    <section className="block" id="pipeline">
+    <section className="block" id="method">
       <div className="wrap">
-        <SectionHead title="One pipeline, one swappable block">
-          Preprocessing, detection, recognition and post-processing stay fixed. Only the deblurring
-          block changes between studies, so any difference in the results comes from the restoration
-          model alone.
+        <SectionHead title="The method behind every model">
+          The physics of the degradation, the loss the project is building toward, and the one design
+          detail that decides how a pretrained model fails on text it has never seen.
         </SectionHead>
 
-        <div className="pipeline">
-          <div className="flow">
-            {STAGES.map(([title, sub, swap]) => (
-              <div key={title} className={`stage ${swap ? 'swap' : ''}`}>
-                <b>{title}</b>
-                <span>{sub}</span>
-              </div>
-            ))}
-          </div>
-          <div className="rabd-path" aria-hidden="true">
-            <span>CTC recognition loss flows back into the deblurring weights (RABD, training only)</span>
-          </div>
-        </div>
-
-        <div className="two" style={{ marginTop: 56 }}>
+        <div className="two">
           <div className="panel">
             <h3>Physical degradation model</h3>
             <div className="eq">
