@@ -1,0 +1,17 @@
+# Install PyTorch FIRST with the right CUDA build for your GPU (see README), e.g.
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+# (plain `pip install torch` gives a CPU-only build on Windows)
+torch>=2.1
+numpy
+pillow
+scikit-image
+opencv-python-headless
+pytorch-msssim
+pandas
+matplotlib
+tqdm
+requests
+gdown
+easyocr          # default OCR engine (pip only, downloads its models on first use)
+pytesseract      # optional OCR engine; also needs the Tesseract program installed
+ipykernel        # only for the notebook
