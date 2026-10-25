@@ -28,9 +28,15 @@ npm run build
 ```
 
 The static site is written to `dashboard/dist/`. It uses relative asset paths, so the
-folder can be served from any host or sub-path. The workflow in
-`.github/workflows/deploy-dashboard.yml` publishes it to GitHub Pages on every push to
-`main` once Pages is set to "GitHub Actions" in the repository settings.
+folder can be served from any host or sub-path. `npm run check:assets` fails if the source names an image that is not in `public/img/`.
+
+## CI/CD
+
+`.github/workflows/deploy-dashboard.yml` runs on every push to any branch and on every
+pull request that touches `dashboard/`: it installs with `npm ci`, checks image
+references, builds, and uploads the built site as a run artifact. On `main` it then
+deploys that build to GitHub Pages. Set Pages to "GitHub Actions" in the repository
+settings once.
 
 ## Layout
 

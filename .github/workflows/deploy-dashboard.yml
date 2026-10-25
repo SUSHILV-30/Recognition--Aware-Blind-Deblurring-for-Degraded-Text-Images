@@ -1,8 +1,13 @@
-name: Deploy dashboard to GitHub Pages
+name: Dashboard CI/CD
 
+# CI runs on every push to any branch and on every pull request.
+# CD (GitHub Pages) runs only when main changes, after CI passes.
 on:
   push:
-    branches: [main]
+    paths:
+      - "dashboard/**"
+      - ".github/workflows/deploy-dashboard.yml"
+  pull_request:
     paths:
       - "dashboard/**"
       - ".github/workflows/deploy-dashboard.yml"
@@ -10,21 +15,19 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-# Allow one deployment at a time; don't cancel a run that is already publishing.
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 defaults:
   run:
     working-directory: dashboard
 
 jobs:
-  build:
+  ci:
+    name: Build and check
     runs-on: ubuntu-latest
+    # A newer push to the same branch or PR supersedes an older check run.
+    concurrency:
+      group: ci-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -39,24 +42,47 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check image references
+        run: npm run check:assets
+
       - name: Build
         run: npm run build
 
+      - name: Check build output
+        run: |
+          test -f dist/index.html || { echo "dist/index.html missing"; exit 1; }
+          ls dist/assets/*.js dist/assets/*.css > /dev/null
+          test -d dist/img || { echo "dist/img missing"; exit 1; }
+          echo "Build output: $(du -sh dist | cut -f1)"
+
       - name: Configure Pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/configure-pages@v6
 
-      - name: Upload artifact
+      # On main this is the artifact that gets deployed; elsewhere it lets
+      # reviewers download the built site from the run page.
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
           path: dashboard/dist
+          retention-days: ${{ github.ref == 'refs/heads/main' && 30 || 7 }}
 
   deploy:
-    needs: build
+    name: Deploy to GitHub Pages
+    needs: ci
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    # One deployment at a time; never cancel one that is already publishing.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v5
