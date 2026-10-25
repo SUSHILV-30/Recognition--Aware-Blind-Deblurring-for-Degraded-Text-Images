@@ -1,0 +1,9 @@
+level,method,n,char_acc,token_acc
+1,Blurred input,40,0.9435,0.6125
+1,Sharp GT (upper bound),16,0.8861,0.4375
+2,Blurred input,40,0.912,0.515
+2,Sharp GT (upper bound),16,0.8678,0.4479
+3,Blurred input,40,0.6599,0.1187
+3,Sharp GT (upper bound),40,0.8847,0.4029
+4,Blurred input,40,0.2005,0.0
+4,Sharp GT (upper bound),40,0.8949,0.4428

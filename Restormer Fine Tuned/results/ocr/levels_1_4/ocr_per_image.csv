@@ -1,0 +1,273 @@
+level,method,id,font,char_acc,token_acc,gt,ocr
+1,Blurred input,focusStep_1_timesR_size_30_sample_0001,timesR,0.967741935483871,0.6666666666666666,qgBus3nN9L 2cXuPSKPVP NsSkeWWfA,4gBus3nN9L 2cXuPSKPVP NsSkeWWfA
+1,Blurred input,focusStep_1_timesR_size_30_sample_0002,timesR,0.96875,0.75,XFm5TER qR gSj8k7yefL hdxbCimMTW,XFmSTER qR gSj8k7yefL hdxbCimMTW
+1,Blurred input,focusStep_1_timesR_size_30_sample_0003,timesR,0.935483870967742,0.3333333333333333,rNj3DZANP HfTrJsvMFD vCmzXxUaSp,INj3DZANP HfTrJsvMFD VCmzXxUaSp
+1,Sharp GT (upper bound),focusStep_1_timesR_size_30_sample_0003,timesR,0.8709677419354839,0.6666666666666666,rNj3DZANP HfTrJsvMFD vCmzXxUaSp,rNj3DZANP HfTrJsvMFD mz YUaSp
+1,Blurred input,focusStep_1_timesR_size_30_sample_0004,timesR,0.96875,0.75,3A4JQmhRaz sF6bNdhYyz 8zPnK SkBU,3A4JQmhRaz sFobNdhYyz 8zPnK SkBU
+1,Blurred input,focusStep_1_timesR_size_30_sample_0005,timesR,0.96875,0.6666666666666666,t24yhwAFak 4R997FdGhV NBq6EFRDqU,t24yhwAFak 4R99TFdGhV NBq6EFRDqU
+1,Sharp GT (upper bound),focusStep_1_timesR_size_30_sample_0005,timesR,0.875,0.0,t24yhwAFak 4R997FdGhV NBq6EFRDqU,t2AyhwAFak 4R99TFdGh NBqGEFRDqU
+1,Blurred input,focusStep_1_timesR_size_30_sample_0006,timesR,0.96875,0.75,JJNaaKfVDS Rvpdr92Q4W mZZ79DM ZT,JJNaaKfVDS Rvpdr92Q4W mZZZ9DM ZT
+1,Blurred input,focusStep_1_timesR_size_30_sample_0007,timesR,0.875,0.25,UH2E2V2BFQ 7eQLUDFPGR ArH QPnrde,UHZEZV2BFQ TeQLUDFPGR ArH OPnrde
+1,Blurred input,focusStep_1_timesR_size_30_sample_0008,timesR,1.0,1.0,eztDypfM4P kYr9bmtdtg CiTC3n3MDu,eztDypfM4P kYr9bmtdtg CiTC3n3MDu
+1,Sharp GT (upper bound),focusStep_1_timesR_size_30_sample_0008,timesR,0.96875,0.6666666666666666,eztDypfM4P kYr9bmtdtg CiTC3n3MDu,eztDypfM4P kYr9bmtdtg iTC3n3MDu
+1,Blurred input,focusStep_1_timesR_size_30_sample_0009,timesR,0.9375,0.6666666666666666,DHssYPPdUu vNW6XMM9xc D5N3DjTNWf,DHssYPPdUu vNW6XMM9xc DSNBDjTNWf
+1,Sharp GT (upper bound),focusStep_1_timesR_size_30_sample_0009,timesR,0.8125,0.3333333333333333,DHssYPPdUu vNW6XMM9xc D5N3DjTNWf,DHssYPPdUu NI XMM9x DSNBDjTNWf
+1,Blurred input,focusStep_1_timesR_size_30_sample_0010,timesR,0.96875,0.6666666666666666,AkwgHyEhLt ywPqAD53bF A9cpr4UqDY,AkwgHyEhLt ywPqADS3bF A9cpr4UqDY
+1,Sharp GT (upper bound),focusStep_1_timesR_size_30_sample_0010,timesR,0.8125,0.0,AkwgHyEhLt ywPqAD53bF A9cpr4UqDY,Ak vgHyEhLt PqADS3bF 9cpr4UqDY
+1,Blurred input,focusStep_1_timesR_size_30_sample_0011,timesR,0.9375,0.5,6xXCf NntE pqbf7iKYZt 8bG3aNGYas,6xXCf NntE pqbfTiKYZt 8b63aNGYas
+1,Blurred input,focusStep_1_timesR_size_30_sample_0012,timesR,0.935483870967742,0.3333333333333333,2w66Cwxv5 m83M45VYcM yhmchLqY6C,2w66Cwxv5 m83M4SVYcM yhmchLqY6c
+1,Sharp GT (upper bound),focusStep_1_timesR_size_30_sample_0012,timesR,0.8064516129032258,0.0,2w66Cwxv5 m83M45VYcM yhmchLqY6C,2w66c 15 m83M4SVYcM yhmchLqY6c
+1,Blurred input,focusStep_1_timesR_size_30_sample_0013,timesR,0.90625,0.3333333333333333,nb5TmKrdP9 VecqV7FpYA QDX4RMz3Dw,nbSTmKrdP9 Vecq VZFpYA QDX4RMz3Dw
+1,Blurred input,focusStep_1_timesR_size_30_sample_0014,timesR,0.875,0.0,S5cW9w7NGt YJgVmpEn5m phKKf6ftpE,SScW9wZNGt YJgVmpEnSm phKKfoftpE
+1,Blurred input,focusStep_1_timesR_size_30_sample_0015,timesR,0.90625,0.6666666666666666,qu 5MS BQm a6NLKH2VWH GDG 9F4yAK,qu SMS BQm a6NLKHZWWH GDG 9F4yAK
+1,Sharp GT (upper bound),focusStep_1_timesR_size_30_sample_0015,timesR,0.90625,0.6666666666666666,qu 5MS BQm a6NLKH2VWH GDG 9F4yAK,qu SMS BQm a6NLKH2 VH GDG 9F4yAK
+1,Blurred input,focusStep_1_timesR_size_30_sample_0016,timesR,0.96875,0.75,MsBFpHH F3 zn4UCJqwmA CjFKzYNX2e,MsBFpHH F3 zn4UCJqwmA CjFKzYNXZe
+1,Blurred input,focusStep_1_timesR_size_30_sample_0017,timesR,0.90625,0.5,zhhjHm6QEC jkxHD2zuKJ ZiZ ZzM5LS,zhhjHm6QEC jkxHDZZuKJ ZiZ ZzMSLS
+1,Blurred input,focusStep_1_timesR_size_30_sample_0018,timesR,1.0,1.0,tu CzQjykP angGBXTvYz KAv732ggvx,tu CzQjykP angGBXTvYz KAv732ggvx
+1,Sharp GT (upper bound),focusStep_1_timesR_size_30_sample_0018,timesR,0.84375,0.75,tu CzQjykP angGBXTvYz KAv732ggvx,tu CzQjykP angGBXTvYz KI v732g8
+1,Blurred input,focusStep_1_timesR_size_30_sample_0019,timesR,0.875,0.5,baiRCmKY a qCJbK6UqXk y5KJ6TFJ2G,baiRCmKY a qCJbK6UgXk YSKJSTFJ2G
+1,Sharp GT (upper bound),focusStep_1_timesR_size_30_sample_0019,timesR,0.90625,0.75,baiRCmKY a qCJbK6UqXk y5KJ6TFJ2G,baiRCmKY a qCJbK6UqXk YSKJOTFJ2G
+1,Blurred input,focusStep_1_timesR_size_30_sample_0020,timesR,0.96875,0.6666666666666666,c6PdB7wvjM dY42QKDXtY RrRvg8jr6r,c6PdBTwvjM dY42QKDXtY RrRvg8jr6r
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0001,verdanaRef,0.90625,0.3333333333333333,NU7ZtYiGYR 5DiPQ6mYS9 N6b62xUhfu,NUZZtYiGYR 5DiPQ6mys9 N6b62xUhfu
+1,Sharp GT (upper bound),focusStep_1_verdanaRef_size_30_sample_0001,verdanaRef,0.9375,0.3333333333333333,NU7ZtYiGYR 5DiPQ6mYS9 N6b62xUhfu,NUZZtYiGYR 5DiPQ6mYs9 N6b62xUhfu
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0002,verdanaRef,0.9375,0.6666666666666666,yDd7wk7MgC FPTYDQh3tD eJJAxDbAja,yDdZwkZMgC FPTYDQh3tD eJJAxDbAja
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0003,verdanaRef,0.96875,0.6666666666666666,avs2dWcMT9 Mt6UbkHNJh VM3UizZi99,avs2dWcMT9 Mt6UbkHNJh VM3Uizzi99
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0004,verdanaRef,0.84375,0.5,HryNE uvsA 7KAqNRepaV YubXnhHauv,HryNE UVSA ZKAqNRepav YubXnhHauv
+1,Sharp GT (upper bound),focusStep_1_verdanaRef_size_30_sample_0004,verdanaRef,0.875,0.5,HryNE uvsA 7KAqNRepaV YubXnhHauv,HryNE UVSA 7KAqNRepa YubXnhHauv
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0005,verdanaRef,0.875,0.0,Q8byxu5LWx DQcm3Ce2Si i84wsyVJ6P,Q8byxuSLWx DQcm3Cezsi i84wsYVJ6P
+1,Sharp GT (upper bound),focusStep_1_verdanaRef_size_30_sample_0005,verdanaRef,0.8125,0.0,Q8byxu5LWx DQcm3Ce2Si i84wsyVJ6P,Q8byxuSLW DQcm3Cezsi i84wSYVJ6P
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0006,verdanaRef,0.9032258064516129,0.25,6PHh59aC6q YazZuAmUkd jcugSd xE,6PHhS9aC6q YazZuAmUkd jcugsd XE
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0007,verdanaRef,0.9375,0.6666666666666666,tLYMzKQkm6 EEVaUa5eyK GLwPaKrVsF,tLYMzKQkm6 EEVaUaSeyk GLwPaKrVsF
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0008,verdanaRef,0.96875,0.75,hL aHFDWJ9 YjPyYVz9uy cx7Fj3mgEx,hL aHFDWJ9 YjPyYVz9uy cxZFj3mgEx
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0009,verdanaRef,0.9375,0.6666666666666666,VQqGEBMZeF yBy3s2YHY2 zpFHxtypvw,VQqGEBMZeF YBy3s2YHYZ zpFHxtypvw
+1,Sharp GT (upper bound),focusStep_1_verdanaRef_size_30_sample_0009,verdanaRef,0.90625,0.3333333333333333,VQqGEBMZeF yBy3s2YHY2 zpFHxtypvw,VQqGEBMZeF By3s2YHY2 ZpFH xtypvw
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0010,verdanaRef,0.9375,0.5,NmgDsWkMud yumpe9aqyT bBT8aD 2ST,NmgDsWkMud yumpe9aqyt bBTSaD 2ST
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0011,verdanaRef,0.90625,0.3333333333333333,VcExgpgzPi UR3yXHAh5T 5hHB3iU2ey,VcExgpgzPi UR3yXHAhST ShHB3iUZey
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0012,verdanaRef,1.0,1.0,fBDKMg r9g 9ma9tqGm26 iSmJemeMak,fBDKMg r9g 9ma9tqGm26 iSmJemeMak
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0013,verdanaRef,1.0,1.0,NPNLCJr9t4 NqEysVHmUT VLWqPjr45e,NPNLCJr9t4 NqEysVHmUT VLWqPjr45e
+1,Sharp GT (upper bound),focusStep_1_verdanaRef_size_30_sample_0013,verdanaRef,0.96875,0.6666666666666666,NPNLCJr9t4 NqEysVHmUT VLWqPjr45e,NPNLCJr9t4 NqEysVHmUt VLWqPjr45e
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0014,verdanaRef,0.96875,0.6666666666666666,idCXFM3ttR PkFuhs7khy MPJqdeaxU7,idCXFM3ttR PkFuhszkhy MPJqdeaxU7
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0015,verdanaRef,1.0,1.0,TyGPmmfaKX tiQbGrAjAV ryrKzjpTbe,TyGPmmfaKX tiQbGrAjAV ryrKzjpTbe
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0016,verdanaRef,1.0,1.0,mVvhLmLezx XwCgqXLT3U h3JZPKnxKb,mVvhLmLezx XwCgqXLT3U h3JZPKnxKb
+1,Sharp GT (upper bound),focusStep_1_verdanaRef_size_30_sample_0016,verdanaRef,0.875,0.3333333333333333,mVvhLmLezx XwCgqXLT3U h3JZPKnxKb,m vhLmLezx WCgqXLTBU h3JZPKnxKb
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0017,verdanaRef,0.9375,0.6666666666666666,d4ETFWJjqj G7fWm5uWY2 kHjDdy4SED,d4ETFWJjqj GZfWmSuWY2 kHjDdy4SED
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0018,verdanaRef,0.9375,0.6666666666666666,5JxKn9t87B qjjVqfh6zc bmkQwsA2DA,5JxKn9t87B qjjVqfh6zc bmkQwSAZDA
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0019,verdanaRef,0.96875,0.75,Z UsXd7cGQ HtF3VLNQx2 iwuFhGnPzj,Z UsXdZcGQ HtF3VLNQx2 iwuFhGnPzj
+1,Blurred input,focusStep_1_verdanaRef_size_30_sample_0020,verdanaRef,0.96875,0.6666666666666666,UMdwuaFYFz v888uDShhx M9CVjFsNWK,UMdwuaFYFz v888uDShhx MICVjFsNWK
+1,Sharp GT (upper bound),focusStep_1_verdanaRef_size_30_sample_0020,verdanaRef,1.0,1.0,UMdwuaFYFz v888uDShhx M9CVjFsNWK,UMdwuaFYFz v888uDShhx M9CVjFsNWK
+2,Blurred input,focusStep_2_timesR_size_30_sample_0001,timesR,0.8064516129032258,0.6666666666666666,gQY4bQQT8 wSAc5W5suv 9DzcRqaq4A,gQY4bQQT8 WSAcSWSSUV 9DzcRqaq4A
+2,Sharp GT (upper bound),focusStep_2_timesR_size_30_sample_0001,timesR,0.8064516129032258,0.6666666666666666,gQY4bQQT8 wSAc5W5suv 9DzcRqaq4A,gQY4bQQT8 SAc) VSsu 9DzcRqaq4A
+2,Blurred input,focusStep_2_timesR_size_30_sample_0002,timesR,0.8709677419354839,0.3333333333333333,375s2DLHM SBx8JhyLCf yd5FAZy9a5,375s2DLHM SBx SJhyLCf YdSFAZy9a5
+2,Sharp GT (upper bound),focusStep_2_timesR_size_30_sample_0002,timesR,0.9032258064516129,0.3333333333333333,375s2DLHM SBx8JhyLCf yd5FAZy9a5,375s2DLHM SBxxJhyLCf YdSFAZy9a5
+2,Blurred input,focusStep_2_timesR_size_30_sample_0003,timesR,0.8709677419354839,0.25,2NjJhrQ M 8TvJxffyeR 5XXfRweVFU,2NjJhQ M STvJxffyeR SXXRweVFU
+2,Blurred input,focusStep_2_timesR_size_30_sample_0004,timesR,0.875,0.0,TGWEQK4pGQ AJHCME7vqk 7K gzpqz9p,TGWEQKApGQ AJHCMETvqk TK gpqz9p
+2,Sharp GT (upper bound),focusStep_2_timesR_size_30_sample_0004,timesR,0.8125,0.25,TGWEQK4pGQ AJHCME7vqk 7K gzpqz9p,TG) EQK4pG AJHCMETvgk TK gzpqz9p
+2,Blurred input,focusStep_2_timesR_size_30_sample_0005,timesR,0.8125,0.25,arNWgEVtky wWt4QrH27Q YF PkR9kwV,arNWgEVky AW4OrH270 YF PkROkwV
+2,Sharp GT (upper bound),focusStep_2_timesR_size_30_sample_0005,timesR,0.75,0.25,arNWgEVtky wWt4QrH27Q YF PkR9kwV,arNF gEVtky Vt4OrH270 YF PkR9k
+2,Blurred input,focusStep_2_timesR_size_30_sample_0006,timesR,0.935483870967742,0.3333333333333333,crTwDdM36 hRJ7BUMDBG sR4MdZkjUM,crTwDdM36 hRJZBUMDBG sRAMdZkjUM
+2,Blurred input,focusStep_2_timesR_size_30_sample_0007,timesR,0.84375,0.6666666666666666,qHUbiFRLyn zvpSmKArsV 28hNZXJFWD,qHUbiFRLyn EpSI KArs V 28hNZXJFWD
+2,Blurred input,focusStep_2_timesR_size_30_sample_0008,timesR,0.967741935483871,0.75,wDbC4DHjZ 6WbSaWwCcC Ga4ufA6 ix,wDbC4DHjZ 6WbSaWwCcC Ga4ufA6 iX
+2,Sharp GT (upper bound),focusStep_2_timesR_size_30_sample_0008,timesR,0.6451612903225806,0.25,wDbC4DHjZ 6WbSaWwCcC Ga4ufA6 ix,WV DbCADHjZ VbSa Cck Ga4ufA6 1
+2,Blurred input,focusStep_2_timesR_size_30_sample_0009,timesR,0.84375,0.25,C5ppgb bvM nnFLqC2Wez P5GzLPMsae,CSppgb bvM nFLqC2Wez PSGPMsae
+2,Blurred input,focusStep_2_timesR_size_30_sample_0010,timesR,0.9375,0.5,f4H4uLFaJY iBtGmnNbMy tEnj 2vdng,f4H4uLFaJY iBt GmnNbMy tEnj Zvdng
+2,Sharp GT (upper bound),focusStep_2_timesR_size_30_sample_0010,timesR,0.9375,0.5,f4H4uLFaJY iBtGmnNbMy tEnj 2vdng,f4H4uLFaJY iBtGmnNbMv tEnj Zvdng
+2,Blurred input,focusStep_2_timesR_size_30_sample_0011,timesR,0.875,0.25,rXKjMb vRX fe9zbyGqFd wbhZ5XBBdU,[XKjMb VRX fe9zbyGqFd wbh SXBBdU
+2,Blurred input,focusStep_2_timesR_size_30_sample_0012,timesR,0.75,0.25,vN3StfP UN XWhwrRcG5K VWQafgu5eP,VNSSuP UN XWhwrRcGSK WWQalguSeP
+2,Blurred input,focusStep_2_timesR_size_30_sample_0013,timesR,0.9032258064516129,0.6666666666666666,CYAuTJNKg D4SFc3N8v2 39zzq2FnNz,CYAuTJNKg D4SFc3N8v2 39742FnNz
+2,Blurred input,focusStep_2_timesR_size_30_sample_0014,timesR,0.84375,0.0,mBcN7L t84 pc5sVHLBhT CYfxdExhhA,mBcNZL 184 pcSs VHLBhT CYAxdExhhA
+2,Sharp GT (upper bound),focusStep_2_timesR_size_30_sample_0014,timesR,0.90625,0.5,mBcN7L t84 pc5sVHLBhT CYfxdExhhA,mBcNZL t84 pcSs VHLBhT CYfxdExhhA
+2,Blurred input,focusStep_2_timesR_size_30_sample_0015,timesR,0.90625,0.75,3dUTTDquin wt7NPRAaWe jkDA9 HDb6,3dUTTDquin W ZNPRAaWe jkDA9 HDb6
+2,Blurred input,focusStep_2_timesR_size_30_sample_0016,timesR,0.84375,0.0,kLXnYfzQgV crb48PjDG8 WBT8ec85a3,kLXnYizQg V crb4SPiDG8 WBTSec85a3
+2,Blurred input,focusStep_2_timesR_size_30_sample_0017,timesR,0.875,0.3333333333333333,qk2uDUHBWg LQubDCEvqd g5GE77rbE7,gkZuDUHBWg LQubDCEvqd gSGEZ7rbE7
+2,Blurred input,focusStep_2_timesR_size_30_sample_0018,timesR,0.78125,0.0,wbszTLA3cL zLDe8ptw8T WES2c7VkWi,wbszFLABcL 7LDeSptw8T WESZc ZVkWi
+2,Sharp GT (upper bound),focusStep_2_timesR_size_30_sample_0018,timesR,0.84375,0.6666666666666666,wbszTLA3cL zLDe8ptw8T WES2c7VkWi,wbszTLA3cL zLDe8ptw8T NESZcTVk 1
+2,Blurred input,focusStep_2_timesR_size_30_sample_0019,timesR,0.875,0.0,C7Een6x8b9 kdRqwPN5gS sgk99ubP7U,CZEenox8b9 kdRqwPNSgS sgk99ubPZU
+2,Blurred input,focusStep_2_timesR_size_30_sample_0020,timesR,0.9375,0.3333333333333333,wPqT5yAnnK WchB4jRz3j fqXuZ5iBab,wPqTSyAnnK WchB4jRz3j fqXuZSiBab
+2,Sharp GT (upper bound),focusStep_2_timesR_size_30_sample_0020,timesR,0.84375,0.0,wPqT5yAnnK WchB4jRz3j fqXuZ5iBab,PqTSyAnnK chB4jRz3j fq uZSiBab
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0001,verdanaRef,0.96875,0.6666666666666666,bZmQQHhVw2 P4zYTDvTaf TdMhizrpKz,bZmQQHhVw2 PazYTDvTaf TdMhizrpKz
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0002,verdanaRef,0.90625,0.6,gNPfKVDrdF DL3wGHjLZ8 VP QVVjY 9,gNPfKVDrdF DLBWGHjLZ8 VP QWVjY 9
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0003,verdanaRef,0.9375,0.5,Z dFmep77t FLbFWx3x8X KkVT4NYfiN,2 dFmep77t FLbFWx3x8X KkVTANYfiN
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0004,verdanaRef,0.96875,0.6666666666666666,bb6mLbgzgD WEqKq9vDqt SLtx48HnAM,bbbmLbgzgD WEqKq9vDqt SLtx48HnAM
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0005,verdanaRef,0.96875,0.75,mfC9 HU337 USPKGZHhbp iVpfgKdDLC,mfc9 HU337 USPKGZHhbp iVpfgKdDLC
+2,Sharp GT (upper bound),focusStep_2_verdanaRef_size_30_sample_0005,verdanaRef,0.96875,0.75,mfC9 HU337 USPKGZHhbp iVpfgKdDLC,mfc9 HU337 USPKGZHhbp iVpfgKdDLC
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0006,verdanaRef,0.96875,0.6666666666666666,k5UDfiWahz Cb9LTRQNEK RT3z4MEmMY,kSUDfiWahz Cb9LTRQNEK RT3z4MEmMY
+2,Sharp GT (upper bound),focusStep_2_verdanaRef_size_30_sample_0006,verdanaRef,0.9375,0.3333333333333333,k5UDfiWahz Cb9LTRQNEK RT3z4MEmMY,kSUDfiWahz Cb9LTRQNEK RT324MEmMY
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0007,verdanaRef,1.0,1.0,k4JYM pF6Z RsLNLPvBki iq7Xms3NS,k4JYM pF6Z RsLNLPvBki iq7Xms3NS
+2,Sharp GT (upper bound),focusStep_2_verdanaRef_size_30_sample_0007,verdanaRef,0.967741935483871,0.75,k4JYM pF6Z RsLNLPvBki iq7Xms3NS,k4JYM pF6Z RsLNLPvBki iqZXms3NS
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0008,verdanaRef,1.0,1.0,tXZFjKTywh k77drVtjf4 XGJhn6Ht3v,tXZFjKTywh k77drVtjf4 XGJhn6Ht3v
+2,Sharp GT (upper bound),focusStep_2_verdanaRef_size_30_sample_0008,verdanaRef,0.9375,0.3333333333333333,tXZFjKTywh k77drVtjf4 XGJhn6Ht3v,tXZFjKT wh kZ7drVtjf4 XGJhn6Ht3v
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0009,verdanaRef,0.9375,0.6666666666666666,JpU5vXmN5F tEnTSGq3iE zyvw8zjLYd,JpUSvXmNSF tEnTSGq3iE zyvw8zjLYd
+2,Sharp GT (upper bound),focusStep_2_verdanaRef_size_30_sample_0009,verdanaRef,0.8125,0.3333333333333333,JpU5vXmN5F tEnTSGq3iE zyvw8zjLYd,JpUSvXmNSF tEnTSGq3iE ZV W8zjLYd
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0010,verdanaRef,1.0,1.0,t6gRrxLaJL GGxtmcUt9j QvReWvvtPw,t6gRrxLaJL GGxtmcUt9j QvReWvvtPw
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0011,verdanaRef,0.84375,0.0,5UJCV5T8tH HSj58W7PMa 5cDh4RydP9,5UJCVS8tH HSjS8WZPMa ScDh4RydP9
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0012,verdanaRef,0.96875,0.6666666666666666,rNGdMhxNxC 7XpwEhTFrT iLLtRjC5qH,rNGdMhxNxC 7XpwEhTFrT iLLtRjCSqH
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0013,verdanaRef,0.9375,0.5,DJXPZJgzKJ yHUkPXhwDp rjnkU NDCH,DJXPZJgzK] YHUkPXhwDp rjnkU NDCH
+2,Sharp GT (upper bound),focusStep_2_verdanaRef_size_30_sample_0013,verdanaRef,0.9375,0.5,DJXPZJgzKJ yHUkPXhwDp rjnkU NDCH,DJXPZJgzK] HUkPXhwDp rjnkU NDCH
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0014,verdanaRef,1.0,1.0,qAsuSpTQGm ByXjBd2KS5 pMi8Tnhm6w,qAsuSpTQGm ByXjBd2KS5 pMi8Tnhm6w
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0015,verdanaRef,1.0,1.0,YDg8ssmNiY DwtsvzXsbM V3XxhLVKm4,YDg8ssmNiY DwtsvzXsbM V3XxhLVKm4
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0016,verdanaRef,0.90625,0.5,LAQKTQQQfV cG58r2eqHG P4AMB JXtr,LAQKTQQQfv cGS8rZeqHG P4AMB JXtr
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0017,verdanaRef,0.96875,0.75,nuwKcmL2fd ihvWJxAp5J aqkN VZmwe,nuwKcmL2fd ihvWJxAp5] aqkN VZmwe
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0018,verdanaRef,0.96875,0.75,w4t9 4DTEY thgqYYH5Uj H3ku3WEXRE,w4t9 4DTEY thgqYYHSUj H3ku3WEXRE
+2,Sharp GT (upper bound),focusStep_2_verdanaRef_size_30_sample_0018,verdanaRef,0.875,0.75,w4t9 4DTEY thgqYYH5Uj H3ku3WEXRE,w4t9 4DTEY thgqr {YHSUj H3ku3WEXRE
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0019,verdanaRef,0.96875,0.6666666666666666,u7yQhA4bs3 cNkqfaJkLp 6jEkX222Vk,uZyQhA4bs3 cNkqfaJkLp 6jEkX222Vk
+2,Blurred input,focusStep_2_verdanaRef_size_30_sample_0020,verdanaRef,0.90625,0.6666666666666666,CauiUTEvR9 was5in5kDJ hRHdB97jYj,CauiUTEvR9 wasSinSkD] hRHdB97jYj
+3,Blurred input,focusStep_3_timesR_size_30_sample_0001,timesR,0.5,0.0,7fy4qb 4 UhiBHjvk6p srUhfzSggD,Ty-qb UlBHjkop SUlzSeeD
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0001,timesR,0.9333333333333333,0.5,7fy4qb 4 UhiBHjvk6p srUhfzSggD,Tfy4qb 4 UhiBHjvkop srUhfzSggD
+3,Blurred input,focusStep_3_timesR_size_30_sample_0002,timesR,0.59375,0.25,kY7CBDzxnM GSxiQNiDHB Ucf49Eud 6,KYZCBDAM GSONDHB Uckolud 6
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0002,timesR,0.875,0.25,kY7CBDzxnM GSxiQNiDHB Ucf49Eud 6,kYZCBDzxnM GSxiONiDHB Ucf49Eud
+3,Blurred input,focusStep_3_timesR_size_30_sample_0003,timesR,0.5,0.0,i9rrckTkkD cuF3Q3MbDy z2FG4gS9RC,{9nckkkD) cul SO MbDy 2F 6J#SORC
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0003,timesR,0.9375,0.6666666666666666,i9rrckTkkD cuF3Q3MbDy z2FG4gS9RC,i9rrckTkkD cuF3Q3MbDy Z2FGAgS9RC
+3,Blurred input,focusStep_3_timesR_size_30_sample_0004,timesR,0.59375,0.0,mPasiJByFe nd9DuhSQdf igtTFi9kA8,mFasBw< ndoDuhSOdi ItmFi9kAS
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0004,timesR,0.96875,0.6666666666666666,mPasiJByFe nd9DuhSQdf igtTFi9kA8,mPasiJByFe nd9DuhSOdf igtTFi9kA8
+3,Blurred input,focusStep_3_timesR_size_30_sample_0005,timesR,0.4,0.0,JWD5jnXK L8XBAea3xn aCQpbchuP8,JWDSJAK LMIBIcSu 4( Opbchul'8
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0005,timesR,0.7,0.0,JWD5jnXK L8XBAea3xn aCQpbchuP8,DSjnXK LSXBAea3 YIL aCQpbchuP&
+3,Blurred input,focusStep_3_timesR_size_30_sample_0006,timesR,0.4375,0.0,YgtLEAw2yi yU6WAicnFu YdqCew9Z e,Yetlw2n 'UGWACnu Ydqc cu9/
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0006,timesR,0.78125,0.25,YgtLEAw2yi yU6WAicnFu YdqCew9Z e,'gtLEA VZyi YU6 AicnFu YdqC w9Z e
+3,Blurred input,focusStep_3_timesR_size_30_sample_0007,timesR,0.5625,0.0,tHyih9Q47C Uyte3YVeuA HZWirieHpk,(yih9o47C Uc))Vcu | MZWircHpk
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0007,timesR,0.9375,0.3333333333333333,tHyih9Q47C Uyte3YVeuA HZWirieHpk,tHyih9047C Uyte3YVeuA HZ irieHpk
+3,Blurred input,focusStep_3_timesR_size_30_sample_0008,timesR,0.4838709677419355,0.0,fUX 5e3bz iNxAvJjJQn AXSe4Xu 3n,IUX Jcsb INuiJjOn LISc#Xu Sn
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0008,timesR,0.8387096774193549,0.4,fUX 5e3bz iNxAvJjJQn AXSe4Xu 3n,fUX Se3bz iN JjJQn XSe4Xu 3n
+3,Blurred input,focusStep_3_timesR_size_30_sample_0009,timesR,0.3548387096774194,0.0,S6AY59sTXN UE3vUFah5g GwNe74ceS,S6)SSTN ULWUI Aop GwVcuccs
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0009,timesR,0.8709677419354839,0.0,S6AY59sTXN UE3vUFah5g GwNe74ceS,S6AYS9sTXN UE3vUFahSg W Ne74ceS
+3,Blurred input,focusStep_3_timesR_size_30_sample_0010,timesR,0.5625,0.0,4Sztc23xf6 gWWqvh5cKd djLzVtRizz,4Sac23u6 WWqhScKd dilRi
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0010,timesR,0.875,0.6666666666666666,4Sztc23xf6 gWWqvh5cKd djLzVtRizz,4Sztc23xf6 8 qvhScKd djLzVtRizz
+3,Blurred input,focusStep_3_timesR_size_30_sample_0011,timesR,0.3548387096774194,0.0,HB 4cfEwW 9NYNeECMVb 3vgerzfLt6,HK Acl Ml ONNclCM Jecrl6
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0011,timesR,0.967741935483871,0.75,HB 4cfEwW 9NYNeECMVb 3vgerzfLt6,HB 4cfEw 9NYNeECMVb 3vgerzfLt6
+3,Blurred input,focusStep_3_timesR_size_30_sample_0012,timesR,0.5483870967741935,0.25,Dvtj yMrbE VKz4hCqY76 vcAC5zEJh,Dvtj Wrbl VKC 4)76 VcA6M Jh
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0012,timesR,0.9032258064516129,0.5,Dvtj yMrbE VKz4hCqY76 vcAC5zEJh,Dvtj MrbE VKz4hCqY76 cACSzEJh
+3,Blurred input,focusStep_3_timesR_size_30_sample_0013,timesR,0.6875,0.3333333333333333,bK8Y4mydvZ 6KBigikpnq fu4Yh86T3Y,bKSY Amydv/ 6KBigikpnq #Yhs6/SY
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0013,timesR,0.90625,0.6666666666666666,bK8Y4mydvZ 6KBigikpnq fu4Yh86T3Y,bK8Y4m yd VZ 6KBigikpnq fu4Yh86T3Y
+3,Blurred input,focusStep_3_timesR_size_30_sample_0014,timesR,0.3870967741935484,0.0,z EaDbNc52 EinNzL3DRB uRkd4keSx,FaDhNc)2 FMVSDKB uKidcSi
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0014,timesR,0.935483870967742,0.5,z EaDbNc52 EinNzL3DRB uRkd4keSx,z EaDbNc52 EinNzLBDRB uRkd4keSz
+3,Blurred input,focusStep_3_timesR_size_30_sample_0015,timesR,0.5,0.0,bXEGWbPcL9 b5Vvg53pv9 faN8y3tmXa,bXGWbll 9 bSWgsip9 faNSyJumn Ya
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0015,timesR,0.78125,0.0,bXEGWbPcL9 b5Vvg53pv9 faN8y3tmXa,bXEG VbPcL9 b5 g53p faNSy3tmXa
+3,Blurred input,focusStep_3_timesR_size_30_sample_0016,timesR,0.46875,0.25,MqgGFjEP8F ni7z23kxTi hyQx WUq6z,MGFJFPST mlajhli hOx WUq6z
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0016,timesR,0.84375,0.25,MqgGFjEP8F ni7z23kxTi hyQx WUq6z,Mqg GFjEPSF ni7z23kxTi hy VUq6z
+3,Blurred input,focusStep_3_timesR_size_30_sample_0017,timesR,0.59375,0.0,ycNu 32g w YqJzdnagBH EmT9cdaSGZ,KcNu 322 YqJzdmBH Fm'cdas6/
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0017,timesR,0.84375,0.2,ycNu 32g w YqJzdnagBH EmT9cdaSGZ,VcNu 323 YqJzdnagBH EmT9cdaSGz
+3,Blurred input,focusStep_3_timesR_size_30_sample_0018,timesR,0.4375,0.0,f4sEVYbXFn HyTjXZkum7 AKN4KWcjwM,"AbXl"" Mw/ixzhu7 AKNKWcjvM"
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0018,timesR,0.90625,0.3333333333333333,f4sEVYbXFn HyTjXZkum7 AKN4KWcjwM,f4sEVYbxFn HyTjXZkum7 AKN4KF cjwM
+3,Blurred input,focusStep_3_timesR_size_30_sample_0019,timesR,0.625,0.0,V7 mEcY2iy TsTminDzmg Zx4GM4EAxB,177 mEcYliy TsminDmng luGMFAB
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0019,timesR,0.96875,0.75,V7 mEcY2iy TsTminDzmg Zx4GM4EAxB,7 mEcY2iy TsTminDzmg Zx4GM4EAxB
+3,Blurred input,focusStep_3_timesR_size_30_sample_0020,timesR,0.3870967741935484,0.0,RTX nxMvgh HyZHvxpqmF NkVVUeGFt,KIX nAvel Hy/ Hpcml VAWUcG
+3,Sharp GT (upper bound),focusStep_3_timesR_size_30_sample_0020,timesR,0.7741935483870968,0.25,RTX nxMvgh HyZHvxpqmF NkVVUeGFt,RTX m Mv vgh HyZH pqmF Nk VUeGFt
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0001,verdanaRef,0.9375,0.5,PH8KfUpLrA fufyG6udMG s8s X7gP2y,PH8KfUpLrA fufyGbudMG s8s XlgP2y
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0001,verdanaRef,0.8125,0.25,PH8KfUpLrA fufyG6udMG s8s X7gP2y,PH8KfUpLrA fufvGeudMG 585 XZgPZy
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0002,verdanaRef,0.8387096774193549,0.0,eSRbXi63H wYJD4j7Jb5 U5DunJiEAK,eSRbxi63h wYJD4;7Jb5 UsdunJiEAK
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0002,verdanaRef,0.935483870967742,0.3333333333333333,eSRbXi63H wYJD4j7Jb5 U5DunJiEAK,eSRbXi63H NYJD4j7Jb5 USDunJiEAK
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0003,verdanaRef,0.875,0.0,eVW6cAUKrn iQwdhECgtR UrdJBZHq4z,eVW6cAUkrn IQwdhECgtR UrdJBZha4z
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0003,verdanaRef,0.96875,0.6666666666666666,eVW6cAUKrn iQwdhECgtR UrdJBZHq4z,e W6cAUKrn iQwdhECgtR UrdJBZHq4z
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0004,verdanaRef,0.9375,0.6,k2 Nwrkz Y hbyMVy3685 gauv6gSdkd,K2 Nwrkz Y hbyMVy3685 gauv6gSdka
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0004,verdanaRef,0.84375,0.4,k2 Nwrkz Y hbyMVy3685 gauv6gSdkd,k2 Nwrkz Ty hbyM Y3685 gauv6gsdkd
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0005,verdanaRef,0.875,0.25,ZCHrJbmPnS ZW27Gk9Dmu 4xY 5FARvx,ZCHrJbmPnS Zw27Gk9Dmu 4Y SFARvX
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0005,verdanaRef,0.78125,0.0,ZCHrJbmPnS ZW27Gk9Dmu 4xY 5FARvx,ZCHrJbmPns ZW2zGk9Dmu 4X {SFARv
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0006,verdanaRef,0.6875,0.0,k 9X3sA32n PdZtGUN2pm bUA4Pfw 8j,K 9/35432n PaZtGUNZpm DUAAPf 8)
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0006,verdanaRef,0.90625,0.4,k 9X3sA32n PdZtGUN2pm bUA4Pfw 8j,k 9X3sA3Zn PdZtGUNZpm bUAAPfw 8j
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0007,verdanaRef,0.8125,0.2,cXUgKYVq p 7LPgWtjPUD AsY8 v5c7P,cXUgKYq p ZLPgWtjPUd Asy8 VSc7P
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0007,verdanaRef,0.84375,0.6,cXUgKYVq p 7LPgWtjPUD AsY8 v5c7P,cXUgK} Iq p 7LPgWtjPUD AsY8 vScZP
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0008,verdanaRef,0.84375,0.25,mr9Ucseh s R9gMWmzxCL QMMsubargL,mrgUcsen 5 RSgMWmzCL QMMsubargL
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0008,verdanaRef,0.96875,0.75,mr9Ucseh s R9gMWmzxCL QMMsubargL,mr9Ucseh S R9gMWmzxCL QMMsubargL
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0009,verdanaRef,0.7419354838709677,0.25,GUfXnJ2n p ZQftEYdBii UbYS4KM9c,GUfxnjzn p zofEYdBii UbYS4KMC
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0009,verdanaRef,0.967741935483871,0.75,GUfXnJ2n p ZQftEYdBii UbYS4KM9c,GUfXnJzn p ZQftEYdBii UbYS4KM9c
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0010,verdanaRef,0.875,0.25,KcXmn4K uk Mizyfg3FCq exr94Y2MUy,KcXmnak uk Mizyig3FCq exr94YZMUy
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0010,verdanaRef,0.90625,0.5,KcXmn4K uk Mizyfg3FCq exr94Y2MUy,KcXmn4k uk Mizyfg3FCq exr94YZMUv
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0011,verdanaRef,0.875,0.5,VMVTw gLsx G9yL8SUHB2 8te7EUTQPF,VMVT gLsx G9YLBSUHBZ 8te7EUTQPF
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0011,verdanaRef,0.78125,0.0,VMVTw gLsx G9yL8SUHB2 8te7EUTQPF,IMVTw gLsX G9Y LSSUHBZ 8teZEUTQPF
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0012,verdanaRef,0.8125,0.0,iVr6pmzhaV FLAaCwWsJL cphqYhTiPb,IVropmzhav FLAaCwWSJL cphaYhTipb
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0012,verdanaRef,0.9375,0.6666666666666666,iVr6pmzhaV FLAaCwWsJL cphqYhTiPb,"iVr6pmzha"" V FLAaCwWsJL cphqYhTiPb"
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0013,verdanaRef,0.8125,0.3333333333333333,QaVWUsQeU8 tpYbX63mWf Av7J27nCXU,QaVWUsQeU8 {PYbx63mwf Av7]27nCXu
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0013,verdanaRef,0.9375,0.3333333333333333,QaVWUsQeU8 tpYbX63mWf Av7J27nCXU,Qa WUsQeU8 tpYbx63mWf Av7J27nCXU
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0014,verdanaRef,0.8125,0.0,YqWeFrJVar AKK2Cq3aTG RwAyrHvv7E,YaWeFrJVar AKK2Cq3atG RwAYTHVvZE
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0014,verdanaRef,0.84375,0.3333333333333333,YqWeFrJVar AKK2Cq3aTG RwAyrHvv7E,YqWeFrJVar AKKZCq3aTG RwAyrH IVZE
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0015,verdanaRef,0.78125,0.0,raqkFh7DUw iY3ZENZFyA kc5J9An6Ma,raakFh7DUw IY3ZENZFYA KcSJGAngMa
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0015,verdanaRef,0.90625,0.3333333333333333,raqkFh7DUw iY3ZENZFyA kc5J9An6Ma,raqkFhZDUw iY3ZENZF 4 kc5J9An6Ma
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0016,verdanaRef,0.84375,0.2,5yDRMm y k HmWnRw6zRu EvEeXmrT6p,SyDRMm Y K HmwnR 6zRu EvEeXmrT6p
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0016,verdanaRef,0.875,0.2,5yDRMm y k HmWnRw6zRu EvEeXmrT6p,SyDRMm Y K HmWnRw6zRu EvEe XmrT6p
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0017,verdanaRef,0.8387096774193549,0.3333333333333333,y4RkvUNSd jYSEE7pcvu Lw9huyDQ8L,Y4RKVUNSd JYSEETpcvu Lw9huyDQ8L
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0017,verdanaRef,0.935483870967742,0.3333333333333333,y4RkvUNSd jYSEE7pcvu Lw9huyDQ8L,4RkvUNSd jYSEEZpcvu Lw9huyDQ8L
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0018,verdanaRef,0.8125,0.0,hByUVxa5Wm kziY8Y4Zpi yEEWU5g3fB,nByUVxaSWm kziy8yaZpi YEEWU5g3fB
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0018,verdanaRef,0.78125,0.0,hByUVxa5Wm kziY8Y4Zpi yEEWU5g3fB,hByU xaSWm kziysy4Zpi EEWUSg3fB
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0019,verdanaRef,0.75,0.0,9wfVegG2y8 MjLX7VBxus rJEEhJ8Ahr,9 fVegG2y8 MJLXZVBxus (JEEnjBAnr
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0019,verdanaRef,0.96875,0.6666666666666666,9wfVegG2y8 MjLX7VBxus rJEEhJ8Ahr,9wfVegG2y8 MjLXZVBxus rJEEhJ8Ahr
+3,Blurred input,focusStep_3_verdanaRef_size_30_sample_0020,verdanaRef,0.65625,0.0,rXhF5cuCzC cBLvgv4gWS 88zMdPrhLs,(XnfscuCzc cBLvgvagws 88zMaprhls
+3,Sharp GT (upper bound),focusStep_3_verdanaRef_size_30_sample_0020,verdanaRef,0.9375,0.6666666666666666,rXhF5cuCzC cBLvgv4gWS 88zMdPrhLs,r XhFScuCzC cBLvgv4gWS 88zMdPrhLs
+4,Blurred input,focusStep_4_timesR_size_30_sample_0001,timesR,0.09375,0.0,MUFDAmPFsJ wd4KNPYg8Y sCDQkbh6m5,"M Vn I"" UUe"
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0001,timesR,0.90625,0.3333333333333333,MUFDAmPFsJ wd4KNPYg8Y sCDQkbh6m5,MUFDAmPFsJ vd4KNPYg8Y sCDOkbhom5
+4,Blurred input,focusStep_4_timesR_size_30_sample_0002,timesR,0.032258064516129004,0.0,JYcx5geeun BUi26BZB38 G vq4qbcg,MI AWR
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0002,timesR,0.935483870967742,0.5,JYcx5geeun BUi26BZB38 G vq4qbcg,JYcxSgeeun BUi26BZB38 J vq4qbcg
+4,Blurred input,focusStep_4_timesR_size_30_sample_0003,timesR,0.0625,0.0,nyunKVuUcn pkgsyfYmzf 8TeMtHqUJq,S Wlq
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0003,timesR,0.875,0.3333333333333333,nyunKVuUcn pkgsyfYmzf 8TeMtHqUJq,nyunKVuUcn pkgs_ yfY mzf STeMtHqUJq
+4,Blurred input,focusStep_4_timesR_size_30_sample_0004,timesR,0.0625,0.0,A FV sRACA s5Cp9bZZCb WWmcBbevCr,K W
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0004,timesR,0.84375,0.4,A FV sRACA s5Cp9bZZCb WWmcBbevCr,A F sRACA sSCp9bZZCb mcBbev r
+4,Blurred input,focusStep_4_timesR_size_30_sample_0005,timesR,0.125,0.0,DQJV5LEXqR 9DieNysqeG ZQ3jnnSf7t,VOj Te 4k M{ 6
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0005,timesR,0.9375,0.3333333333333333,DQJV5LEXqR 9DieNysqeG ZQ3jnnSf7t,DQJVSLEXqR 9DieNysqeG ZQ3jnnSflt
+4,Blurred input,focusStep_4_timesR_size_30_sample_0006,timesR,0.15625,0.0,tQAZrDE 2c hHtTcy4Hxq sWKhf9BJq6,0 Di Wt Ie PWat
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0006,timesR,0.84375,0.5,tQAZrDE 2c hHtTcy4Hxq sWKhf9BJq6,to AZIDE 2c hHtTcy4Hxq S Khf9BJq6
+4,Blurred input,focusStep_4_timesR_size_30_sample_0007,timesR,0.09999999999999998,0.0,Qiw5YZEfg kp2mvXHtP7 U2rjhJfwq,0 Ae Wim Mu It
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0007,timesR,0.7666666666666666,0.0,Qiw5YZEfg kp2mvXHtP7 U2rjhJfwq,O1 wSYZEfg kpZm XHtP7 UZrjhJfwq
+4,Blurred input,focusStep_4_timesR_size_30_sample_0008,timesR,0.16129032258064513,0.0,GhzeJsmdu SwSG9yrESR P69vDjRes5,IVC mtu 6k Mke
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0008,timesR,0.9032258064516129,0.3333333333333333,GhzeJsmdu SwSG9yrESR P69vDjRes5,GhzeJsmdu SG9yrESR P6gvDjRes5
+4,Blurred input,focusStep_4_timesR_size_30_sample_0009,timesR,0.16129032258064513,0.0,GiyyNrNd8B nQXxBPDczU wFvQ9mtqq,"dal ""o WM ""mtan"
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0009,timesR,0.7741935483870968,0.3333333333333333,GiyyNrNd8B nQXxBPDczU wFvQ9mtqq,GiyyNrNd8B nOx BPDczU I Fve Q9mtqq
+4,Blurred input,focusStep_4_timesR_size_30_sample_0010,timesR,0.12903225806451613,0.0,xS H9M5UW DJQN9eKeXN 8BzckWanX8,Met JJo K
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0010,timesR,0.7419354838709677,0.0,xS H9M5UW DJQN9eKeXN 8BzckWanX8,H9MSU DJON9eKeXN 8Bzck an 8
+4,Blurred input,focusStep_4_timesR_size_30_sample_0011,timesR,0.15625,0.0,5sihTQSsSK jRtvzdvWy7 xxGM5Lj4By,M e Ar Rt m Ho M
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0011,timesR,0.75,0.0,5sihTQSsSK jRtvzdvWy7 xxGM5Lj4By,SsihTOSsSK jRtvzdv' GMSLj4By
+4,Blurred input,focusStep_4_timesR_size_30_sample_0012,timesR,0.03125,0.0,6KAKUD6wiv tY5qfhhUyK n2NrHJnyZT,ull 4at
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0012,timesR,0.875,0.0,6KAKUD6wiv tY5qfhhUyK n2NrHJnyZT,6KAKUDowi tYSqfhhUyK nNrHJnyZT
+4,Blurred input,focusStep_4_timesR_size_30_sample_0013,timesR,0.0625,0.0,LfEfjV7tau FgsSrHAuFY ZihiNxvRmr,# Km
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0013,timesR,0.875,0.0,LfEfjV7tau FgsSrHAuFY ZihiNxvRmr,LfEfjVZtau FgsSrHAuF} ZihiN Rmr
+4,Blurred input,focusStep_4_timesR_size_30_sample_0014,timesR,0.15625,0.0,3sHJRKabNi E9MnTqQCJZ x63c6wbk4A,JK 4 M Too
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0014,timesR,0.9375,0.6666666666666666,3sHJRKabNi E9MnTqQCJZ x63c6wbk4A,3sHJRKabNi E9MnTqQCJZ xb3cbwbk4A
+4,Blurred input,focusStep_4_timesR_size_30_sample_0015,timesR,0.09677419354838712,0.0,m7nXyVYuA JtzJhfRaEw P6zjnKDca2,JWk Ra
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0015,timesR,0.7419354838709677,0.3333333333333333,m7nXyVYuA JtzJhfRaEw P6zjnKDca2,m/n V TY UA JtzJhfRaEw PozjnKDca2
+4,Blurred input,focusStep_4_timesR_size_30_sample_0016,timesR,0.15625,0.0,iPgjUcVFGQ m9fhTwwHzP AUazbLY8vh,I mWh Ha Il
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0016,timesR,0.875,0.0,iPgjUcVFGQ m9fhTwwHzP AUazbLY8vh,iPgjUcVFG m9fhT HzP AUazbLYSvh
+4,Blurred input,focusStep_4_timesR_size_30_sample_0017,timesR,0.0,0.0,X7EZfsjyN7 WDGwDGbavn LF4kLbRpgd,hKI
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0017,timesR,0.84375,0.0,X7EZfsjyN7 WDGwDGbavn LF4kLbRpgd,XZEZfsjyNZ DG DGbavn LFAkLbRpgd
+4,Blurred input,focusStep_4_timesR_size_30_sample_0018,timesR,0.03125,0.0,Umkd r3a9A 5yUZcEeGk8 Ux2H RGExR,OM KO
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0018,timesR,0.9375,0.6,Umkd r3a9A 5yUZcEeGk8 Ux2H RGExR,Umkd 13a9A SyUZcEeGk8 Ux2H RGExR
+4,Blurred input,focusStep_4_timesR_size_30_sample_0019,timesR,0.15625,0.0,azBuJLPm4S T7pQJX78uj nvs9yMEDdq,AMWI 1 JJ M du
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0019,timesR,1.0,1.0,azBuJLPm4S T7pQJX78uj nvs9yMEDdq,azBuJLPm4S T7pQJX78uj nvs9yMEDdq
+4,Blurred input,focusStep_4_timesR_size_30_sample_0020,timesR,0.09375,0.0,6rj7R6SF5N VHS6LMcSR2 u4bXSwQnp4,Kt y Sk Omi
+4,Sharp GT (upper bound),focusStep_4_timesR_size_30_sample_0020,timesR,0.8125,0.0,6rj7R6SF5N VHS6LMcSR2 u4bXSwQnp4,6rjTROSFSN JHS6LMcSR2 u4bXS np4
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0001,verdanaRef,0.25,0.0,NMg738MmsL msCWea3ARs sFxzXHK5ib,4q 38xm; 6 0 R 5i0
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0001,verdanaRef,0.96875,0.6666666666666666,NMg738MmsL msCWea3ARs sFxzXHK5ib,NMg738MmsL msCWea3ARs sFxzXHKSib
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0002,verdanaRef,0.25806451612903225,0.0,pbu8j3YT5g wNUccgZELj WzxULdUDy,Poubi 90 muccgzel ULcuo
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0002,verdanaRef,0.967741935483871,0.6666666666666666,pbu8j3YT5g wNUccgZELj WzxULdUDy,pbu8j3YTSg wNUccgZELj WzxULdUDy
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0003,verdanaRef,0.34375,0.0,sUtLvPE4qP ShuGtBVVTZ 8PBzVNmpjg,Ut ? 40? Snugtbi 078 Jmpjq
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0003,verdanaRef,0.9375,0.6666666666666666,sUtLvPE4qP ShuGtBVVTZ 8PBzVNmpjg,sUtLvPE4qP ShuGtB ITZ 8PBzVNmpjg
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0004,verdanaRef,0.5,0.0,Kxyj2Ajqeh UY8GcDc6s2 bwPz HGcjd,Njcen U 8GcDc6 2 0x Gcja
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0004,verdanaRef,0.96875,0.75,Kxyj2Ajqeh UY8GcDc6s2 bwPz HGcjd,Kxyj2Ajqeh UYSGcDc6s2 bwPz HGcjd
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0005,verdanaRef,0.1875,0.0,u3 pDAJasD 5ztFWWQk5d A9hbprTdWz,Dd 0# 54 NOE 7 J0 9ndpt d
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0005,verdanaRef,0.90625,0.5,u3 pDAJasD 5ztFWWQk5d A9hbprTdWz,43 pDAJasD SztFWWQkSd A9hbprTdWz
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0006,verdanaRef,0.25,0.0,akFvsEmBLg 7xYfkhnGcw wSbx8ARVHd,"# 7blq nagc 50,8 RVhd"
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0006,verdanaRef,0.9375,0.3333333333333333,akFvsEmBLg 7xYfkhnGcw wSbx8ARVHd,akFvsEmBLg ZxYfkhnGcw WSbx8ARVHd
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0007,verdanaRef,0.3125,0.0,MtC fGDTRE VYzN4jpHtd jYV8iNjxVc,# Gotae Apntd J8im1 Ve
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0007,verdanaRef,0.96875,0.75,MtC fGDTRE VYzN4jpHtd jYV8iNjxVc,MtC fGDTRE YzN4jpHtd jYV8iNjxVc
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0008,verdanaRef,0.21875,0.0,h ykLa9Bgw iwZ2ahwTxb czi2ig8G8F,"08q Jan"" I0 219868F"
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0008,verdanaRef,0.9375,0.5,h ykLa9Bgw iwZ2ahwTxb czi2ig8G8F,h ykLa9Bgw iwZzahwTxb czizig8G8F
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0009,verdanaRef,0.3125,0.0,PB8Gz9vSEk 3qShDVfMEj nizn SpRFd,380 {SE Joshdvihe a Sprfd
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0009,verdanaRef,1.0,1.0,PB8Gz9vSEk 3qShDVfMEj nizn SpRFd,PB8Gz9vSEk 3qShDVfMEj nizn SpRFd
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0010,verdanaRef,0.21875,0.0,B7UU eam w cikW6y5xb6 8KW rX tsj,J7VV Cd 765 9706 0
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0010,verdanaRef,0.84375,0.42857142857142855,B7UU eam w cikW6y5xb6 8KW rX tsj,BZUU eam Vv cikW6ySxb6 8KW r tsj
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0011,verdanaRef,0.375,0.0,PiWC897NXB ykmzPZ2DDm G ffbVercQ,J C8976 2 ZOdm oVerco
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0011,verdanaRef,0.90625,0.75,PiWC897NXB ykmzPZ2DDm G ffbVercQ,PiWC897NXB Y kmzPZZDDm G ffbVercQ
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0012,verdanaRef,0.3870967741935484,0.0,x4niuW Mr YRaCrPBUVx u6mmyKNSRq,niut 0 C Paut Ubm *SRq
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0012,verdanaRef,0.8709677419354839,0.5,x4niuW Mr YRaCrPBUVx u6mmyKNSRq,4niuw Mr YRaCrPBUI u6mmyKNSRq
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0013,verdanaRef,0.28125,0.0,dEJveZ2PUM LxmWxnkw4V uLB u9 AM4,de) ZZPUh Jn W UC X
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0013,verdanaRef,0.90625,0.4,dEJveZ2PUM LxmWxnkw4V uLB u9 AM4,dEJveZzPUM LxmWxnkw4V ULB 49 AM4
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0014,verdanaRef,0.3125,0.0,MixkbmBLJ3 hKpPhyZdR8 YGQjajjzkm,KDmbl Opn 20R8 GQjal
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0014,verdanaRef,1.0,1.0,MixkbmBLJ3 hKpPhyZdR8 YGQjajjzkm,MixkbmBLJ3 hKpPhyZdR8 YGQjajjzkm
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0015,verdanaRef,0.16129032258064513,0.0,Lit6fAHrgi aj3sNxsETD a DH Vmx8,{6* 0 9 TD Dr Van #ee
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0015,verdanaRef,0.967741935483871,0.8,Lit6fAHrgi aj3sNxsETD a DH Vmx8,LitofAHrgi aj3sNxsETD a DH Vmx8
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0016,verdanaRef,0.28125,0.0,Wv4PXHYrwW GhWvEnY26y KAkDWNMgQA,Gh E0 76 KDwtygQa
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0016,verdanaRef,0.90625,0.3333333333333333,Wv4PXHYrwW GhWvEnY26y KAkDWNMgQA,Nv4pXHYrwW GhWvEnY26w KAkDWNMgQA
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0017,verdanaRef,0.34375,0.0,D3rZmhcWrE uDfwS2SsQb wFD8FENSzR,03 Lmnc Vd SzS.Q6 FobfexSza
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0017,verdanaRef,0.84375,0.3333333333333333,D3rZmhcWrE uDfwS2SsQb wFD8FENSzR,D3rZmhcWrE uDfwszSsQb WFDSFENSZR
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0018,verdanaRef,0.21875,0.0,vvAMHw3dYB u5Pv64MYwj WV4DrjJNBy,3d TE 62 #Dojnb
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0018,verdanaRef,0.84375,0.0,vvAMHw3dYB u5Pv64MYwj WV4DrjJNBy,AMHw3dYB 4SPv64MYwj V4DrjJNBy
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0019,verdanaRef,0.46875,0.0,MVGhX8PU3G GeG3BAC5C5 KgejBdjWmm,VGn 82u36 6 33 CSCS gejed mm
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0019,verdanaRef,0.9375,0.6666666666666666,MVGhX8PU3G GeG3BAC5C5 KgejBdjWmm,MVGhX8PU3G GeG3BACSCS KgejBdjWmm
+4,Blurred input,focusStep_4_verdanaRef_size_30_sample_0020,verdanaRef,0.3125,0.0,sPHtggT8kY nQ66rDTtmR wJ82mn3DRZ,0 (99 81 nos6 otma Jbjmnbor
+4,Sharp GT (upper bound),focusStep_4_verdanaRef_size_30_sample_0020,verdanaRef,1.0,1.0,sPHtggT8kY nQ66rDTtmR wJ82mn3DRZ,sPHtggT8kY nQ66rDTtmR wJ82mn3DRZ
