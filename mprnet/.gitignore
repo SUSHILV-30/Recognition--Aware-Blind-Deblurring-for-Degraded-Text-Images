@@ -17,3 +17,18 @@ venv/
 .ipynb_checkpoints/
 .vscode/
 .DS_Store
+
+# Exclude large datasets and model checkpoints
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.h5
+*.hdf5
+*.zip
+*.tar
+*.tar.gz
+*.7z
+data/
+dataset/
+datasets/
