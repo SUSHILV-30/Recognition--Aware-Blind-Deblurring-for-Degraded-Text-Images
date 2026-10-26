@@ -13,7 +13,7 @@ const HOW = {
   nafnet: [
     'No nonlinear activations: SimpleGate multiplies two halves of the channels instead.',
     'Simplified Channel Attention reweights channels with one pooled 1 × 1 conv.',
-    'This single-resolution variant has no global residual, which is why the untuned model collapses.',
+    'Four-level U-Net, 28 blocks at the deepest level, additive skips and a global residual.',
   ],
   mprnet: [
     'Three stages restore the image progressively, from patches to full resolution.',
@@ -29,6 +29,7 @@ const HOW = {
     'Models the actual camera: one PSF and one radial distortion per blur level.',
     'Training data is synthesised through that model, so it matches the test blur by construction.',
     'A fixed inverse-distortion layer undoes the lens warp before a plain GroupNorm U-Net.',
+    'At Levels 9–13, a conditional residual diffusion model refines each level’s frozen U-Net output.',
   ],
 }
 
@@ -102,16 +103,18 @@ export default function Architecture() {
 
         <div className="two arch-next">
           <div>
-            <span className="eyebrow">Next iteration</span>
-            <h3 style={{ margin: '6px 0 12px' }}>A diffusion restorer in the same slot</h3>
+            <span className="eyebrow">Diffusion</span>
+            <h3 style={{ margin: '6px 0 12px' }}>A diffusion stage in the same slot</h3>
             <p className="muted">
-              The proposed conditional diffusion model replaces the restoration block and keeps the same
-              detection and recognition tail, so it can be benchmarked directly against all five models.
+              The conditional diffusion restorer keeps the same detection and recognition tail, so it can be
+              benchmarked against all five models. A conditional residual version already runs on top of each
+              level’s frozen U-Net at HDC Levels 9–13, where the first samples read 50–91% of characters.
             </p>
+            <a className="btn" href={modelHref('physics')}>See the Level 9–13 samples →</a>
           </div>
           <Figure
             src={img('diffusion_architecture.png')}
-            caption="Proposed conditional diffusion restorer followed by the OCR tail."
+            caption="Conditional diffusion restorer followed by the OCR tail."
           />
         </div>
       </div>

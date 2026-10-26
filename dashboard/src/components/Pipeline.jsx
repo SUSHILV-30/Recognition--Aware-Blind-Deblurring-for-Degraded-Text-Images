@@ -45,7 +45,7 @@ export default function Pipeline() {
             <div className="eq" style={{ fontSize: 18 }}>F<sub>n+1</sub> = F<sub>n</sub> ⊙ σ(conv(ŷ<sub>n</sub>))</div>
             <p className="small muted">MPRNet: supervised attention computed from each stage’s own prediction.</p>
             <div className="eq" style={{ fontSize: 18 }}>SimpleGate(X) = X<sub>1</sub> ⊙ X<sub>2</sub></div>
-            <p className="small muted" style={{ margin: 0 }}>NAFNet variant: no global residual, so nothing pulls an untuned model back toward the input.</p>
+            <p className="small muted" style={{ margin: 0 }}>NAFNet: activation-free blocks inside a multi-scale U-Net that also ends in a global residual. Zero-shot, it stays within 1.3 dB of the input.</p>
           </div>
           <Figure
             src={img('diffusion_architecture.png')}

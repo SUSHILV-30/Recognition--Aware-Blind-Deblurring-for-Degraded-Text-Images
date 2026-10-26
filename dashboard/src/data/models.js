@@ -1,7 +1,7 @@
 // The five restoration models. Each one gets a card on the home page and a
 // page of its own at #/models/<id>. Numbers come from project.js or the papers.
 
-import { HEX, mprnet, nafnet, restormerFt, scratchSteps } from './project.js'
+import { HEX, mprnetFt, nafnet, restormerFt, scratchSteps } from './project.js'
 
 export const MODELS = [
   {
@@ -33,14 +33,14 @@ export const MODELS = [
     owner: 'Rachit Anand',
     paradigm: 'CNN, activation-free',
     color: HEX.naf,
-    start: 'Natural-image checkpoint',
-    params: 'Single-resolution variant',
-    scope: 'focusStep L1–4',
+    start: 'NAFNet-GoPro-width32 weights',
+    params: '≈ 17.1 M',
+    scope: 'focusStep L1–4, 24 test pairs',
     tagline:
-      'A nonlinear-activation-free CNN that collapses without tuning, then posts the largest fine-tuning gain of any model once trained on text.',
+      'The published multi-scale NAFNet, fine-tuned on all ten focusStep steps. It beats the blurred input on PSNR, SSIM and OCR at every level.',
     headline: [
-      ['+9.63 dB', 'Fine-tuning gain at Level 3'],
-      ['+0.211', 'Largest SSIM gain, Level 3'],
+      ['29.83 dB', 'Fine-tuned PSNR at Level 1, +5.13 dB'],
+      ['60.9 → 7.8%', 'OCR character error rate at Level 4'],
     ],
     spark: { label: 'Fine-tuned PSNR, L1 → L4', values: nafnet.map((r) => r.ftPsnr) },
   },
@@ -48,21 +48,21 @@ export const MODELS = [
     id: 'mprnet',
     n: '03',
     name: 'MPRNet',
-    variant: 'Zero-shot',
-    full: 'MPRNet, zero-shot',
+    variant: 'Fine-tuned',
+    full: 'MPRNet, fine-tuned',
     owner: 'Adithya Nambiar P',
     paradigm: 'CNN, multi-stage',
     color: HEX.mpr,
-    start: 'GoPro motion-blur weights',
-    params: 'Unchanged, no training',
-    scope: 'focusStep L0–4, 40 images',
+    start: 'Official GoPro checkpoint',
+    params: '≈ 20.1 M',
+    scope: 'HDC L0–6, 35 test images',
     tagline:
-      'Applied exactly as published for motion blur. A deliberate control that measures what the wrong training data costs on optical defocus.',
+      'The official three-stage MPRNet, fine-tuned on HDC Levels 0–6. Structure recovers clearly at every level; pixel error moves only a little.',
     headline: [
-      ['−15.55 dB', 'Gap from its own GoPro result'],
-      ['17.11 dB', 'Mean PSNR over 40 images'],
+      ['+0.16 to +0.22', 'SSIM gain over the input, every level'],
+      ['48.7 → 42.2%', 'Mean OCR character error rate'],
     ],
-    spark: { label: 'Zero-shot PSNR, L0 → L4', values: mprnet.map((r) => r.psnr) },
+    spark: { label: 'Fine-tuned PSNR, L0 → L6', values: mprnetFt.map((r) => r.ftPsnr) },
   },
   {
     id: 'scratch',
@@ -95,12 +95,12 @@ export const MODELS = [
     color: HEX.hdc,
     start: 'Synthetic data from estimated PSF',
     params: '25.17 M / 12.49 M',
-    scope: 'HDC L0–6, per level',
+    scope: 'HDC L0–6; L9–13 samples',
     tagline:
-      'A replication of the HDC 2021 winner: estimate the camera’s own blur and distortion, synthesise matching training pairs, then train a plain U-Net.',
+      'A replication of the HDC 2021 winner: estimate the camera’s own blur and distortion, synthesise matching pairs, train a plain U-Net. A diffusion refiner extends it to Levels 9–13.',
     headline: [
       ['17.43 dB', 'Level 5 PSNR, SSIM 0.589'],
-      ['0.356 → 0.010', 'PSF peak, Level 0 to 4'],
+      ['50–91%', 'OCR accuracy on Level 9–13 samples'],
     ],
     spark: { label: 'Level 5 PSNR, before → after fine-tuning', values: [15.95, 17.43] },
   },

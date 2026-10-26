@@ -4,25 +4,29 @@ import { status } from '../data/project.js'
 const FINDINGS = [
   ['Matching the data beats a bigger network',
     'A purely convolutional U-Net trained on data synthesised from the estimated camera physics reaches 17.43 dB at Level 5. The 1.18 M-parameter Restormer trained on generic in-domain data tops out at 15.66 dB on its easiest step.'],
-  ['The domain-shift penalty depends on architecture',
-    'MPRNet and NAFNet both start from motion-blur pretraining. MPRNet degrades gracefully and never drops below the input; the NAFNet variant collapses to 5.3–5.6 dB. Supervised attention and global residuals anchor a model to its input, and that anchor decides how badly it fails.'],
+  ['Motion-blur weights do not restore defocused text',
+    'MPRNet and NAFNet both start from GoPro motion-blur weights. Zero-shot, NAFNet stays within 1.3 dB of the input, and MPRNet falls below it at Levels 4–6 (by up to 4.23 dB). Fine-tuned on text, both beat the input at every level: NAFNet cuts Level 4 OCR character errors from 60.9% to 7.8%, and MPRNet lifts SSIM by 0.16–0.22.'],
+  ['SSIM and PSNR can tell different stories',
+    'Fine-tuned MPRNet raises SSIM by up to +0.224 while PSNR moves by only +0.05 to +0.92 dB, and at Levels 4–6 the SSIM gain grows while the PSNR gain shrinks. A model can recover structure a recognizer needs without lowering pixel error much.'],
   ['Small, targeted fine-tuning goes a long way',
     'Freezing Restormer’s encoder and training only the decoder adds up to +3.21 dB at Level 1 and, in Phase 2, takes Level 5 OCR from 0% to 96.9% character accuracy with 150 training pages.'],
   ['Patch metrics overstate real performance',
     'The from-scratch Restormer scores 21.48 dB on training patches and at most 15.66 dB on full pages. Comparisons should always use full-image, per-level results.'],
   ['Pixel scores are not readability',
-    'At Level 5 the pretrained Restormer raises SSIM from 0.372 to 0.419 while OCR still reads 0% of characters. That gap is the case for the recognition-aware RABD loss.'],
+    'At Level 5 the pretrained Restormer raises SSIM from 0.372 to 0.419 while OCR still reads 0% of characters. At NAFNet’s Level 1, PSNR rises 5.13 dB while CER gets worse. That gap is the case for the recognition-aware RABD loss.'],
+  ['Heavy blur is not the end of the road',
+    'At HDC Levels 9–13, where OCR on the blurred page produces mostly noise, a per-level U-Net with a diffusion refiner brings illustrative samples back to 50–91% character accuracy.'],
 ]
 
 const ROADMAP = [
   ['Wire the CTC loss through the recognizer into the deblurring weights', 'First end-to-end Restormer + TrOCR run with CER/WER'],
   ['Run the Restormer notebooks for HDC Levels 7–10', 'Per-level and all-levels results beyond Level 6'],
   ['Score Restormer fine-tuned Levels 1–4 and the other models with OCR', 'Fills the empty columns of the OCR table'],
-  ['Train the physics-informed pipeline on Levels 6–9', 'Completes the Level 0–9 curve; the code already exists'],
-  ['Fine-tune MPRNet and extend it to Steps 5–19', 'Turns the zero-shot control into a fine-tuned data point'],
-  ['Rebuild NAFNet with a global residual', 'A direct test of the anchoring hypothesis'],
+  ['Score the U-Net + diffusion pipeline on full Level 9–13 test sets', 'Turns two illustrative samples per level into real estimates'],
+  ['Evaluate fine-tuned MPRNet on all 280 test pairs, both fonts', 'Replaces the 28–35-image Times-only subset'],
+  ['Score every model on one common test set', 'Same 24 pairs, one OCR engine, one SSIM window and one pipeline, so Tables 8 and 9 compare directly'],
   ['Benchmark Uformer on the common protocol', 'A four-model per-level comparison'],
-  ['Implement the conditional diffusion restorer', 'Benchmarked against all five modules'],
+  ['Benchmark the diffusion restorer against all five models', 'On the common protocol, not only at Levels 9–13'],
 ]
 
 export default function Findings() {
@@ -78,11 +82,13 @@ export default function Findings() {
               <div className="panel" style={{ marginTop: 24 }}>
                 <h4>Limitations, stated openly</h4>
                 <ul className="facts small" style={{ marginTop: 10 }}>
-                  <li>MPRNet is zero-shot only, on 40 images from Levels 0–4.</li>
+                  <li>Fine-tuned MPRNet is scored on 28–35 Times-only images, from short runs with a single seed.</li>
                   <li>Uformer was trained for 150 epochs but not evaluated on the common protocol.</li>
                   <li>RABD is designed, not yet measured: no end-to-end CER/WER numbers.</li>
                   <li>The synthetic PSF ignores astigmatism and coma; DexiNed has not been run.</li>
                   <li>Studies used their own splits, so cross-study numbers are not a strict ranking.</li>
+                  <li>NAFNet is evaluated on 4× downscaled images, and its best checkpoint was picked on the reported test set.</li>
+                  <li>OCR engines differ: EasyOCR for Restormer, NAFNet and MPRNet (letters only), Tesseract for the Level 9–13 samples.</li>
                 </ul>
               </div>
             </div>

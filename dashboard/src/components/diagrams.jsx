@@ -81,53 +81,73 @@ export function SystemDiagram() {
 
 /* ---------------- Restormer-style encoder–decoder ---------------- */
 
-// levels: three encoder levels plus the latent, each { dim, blocks, heads }.
-export function UNetDiagram({ levels, refinement, frozenEncoder = false, inputLabel = 'Blurred page', note }) {
-  const [l1, l2, l3, latent] = levels
-  const enc = [l1, l2, l3]
+// levels: the encoder levels followed by the latent / middle level, each
+// { dim, blocks, heads? }. Defaults draw Restormer; NAFNet overrides the labels.
+export function UNetDiagram({
+  levels,
+  refinement,
+  frozenEncoder = false,
+  inputLabel = 'Blurred page',
+  embedLabel,
+  outLabel = '3 × 3 conv → output',
+  block = 'TBlock',
+  latentName = 'Latent',
+  skipLabel = 'skip',
+  legs = ['↓ PixelUnshuffle', '↑ PixelShuffle'],
   // Restormer's level-1 decoder keeps the concatenated width (2 × dim).
-  const decDim = (i, l) => (i === 0 ? l.dim * 2 : l.dim)
+  decDim = (i, l) => (i === 0 ? l.dim * 2 : l.dim),
+  decBlocks = (i, l) => l.blocks,
+  blockInfo,
+  label = 'Four-level transformer encoder–decoder with skip connections',
+  note,
+}) {
+  const enc = levels.slice(0, -1)
+  const latent = levels[levels.length - 1]
+  const step = 27 / Math.max(enc.length - 1, 1) / (enc.length > 3 ? 1.35 : 1)
+  const heads = (l) => (l.heads ? ` · ${l.heads} head${l.heads > 1 ? 's' : ''}` : '')
   return (
-    <div className="unet" role="figure" aria-label="Four-level transformer encoder–decoder with skip connections">
+    <div className="unet" role="figure" aria-label={label}>
       <div className="unet-top">
         <div className="u-chip io">{inputLabel}</div>
-        <div className="u-chip conv">3 × 3 conv embed → {l1.dim} ch</div>
+        <div className="u-chip conv">{embedLabel || `3 × 3 conv embed → ${enc[0].dim} ch`}</div>
         <div className="u-spacer" />
-        {refinement ? <div className="u-chip conv">Refinement · {refinement}× TBlock</div> : <div className="u-chip conv">3 × 3 conv → output</div>}
+        {refinement ? <div className="u-chip conv">Refinement · {refinement}× {block}</div> : <div className="u-chip conv">{outLabel}</div>}
         <div className="u-chip io out">Restored page</div>
       </div>
 
       <div className="unet-body">
         {enc.map((l, i) => (
-          <div className="u-row" key={i} style={{ '--inset': `${i * 9}%` }}>
+          <div className="u-row" key={i} style={{ '--inset': `${i * step}%` }}>
             <div className={`u-block enc ${frozenEncoder ? 'frozen' : ''}`}>
               <b>Encoder L{i + 1}</b>
-              <span>{l.blocks}× TBlock · {l.dim} ch · {l.heads} head{l.heads > 1 ? 's' : ''}</span>
+              <span>{l.blocks}× {block} · {l.dim} ch{heads(l)}</span>
               {frozenEncoder && <em>frozen</em>}
             </div>
-            <div className="u-skip"><span>skip</span></div>
+            <div className="u-skip"><span>{skipLabel}</span></div>
             <div className="u-block dec">
               <b>Decoder L{i + 1}</b>
-              <span>{l.blocks}× TBlock · {decDim(i, l)} ch</span>
+              <span>{decBlocks(i, l)}× {block} · {decDim(i, l)} ch</span>
               {frozenEncoder && <em>trained</em>}
             </div>
           </div>
         ))}
-        <div className="u-row latent" style={{ '--inset': '27%' }}>
+        <div className="u-row latent" style={{ '--inset': `${(enc.length - 1) * step}%` }}>
           <div className={`u-block latent ${frozenEncoder ? 'frozen' : ''}`}>
-            <b>Latent</b>
-            <span>{latent.blocks}× TBlock · {latent.dim} ch · {latent.heads} heads</span>
+            <b>{latentName}</b>
+            <span>{latent.blocks}× {block} · {latent.dim} ch{heads(latent)}</span>
           </div>
         </div>
-        <div className="u-legs" aria-hidden="true"><i>↓ PixelUnshuffle</i><i>↑ PixelShuffle</i></div>
+        <div className="u-legs" aria-hidden="true"><i>{legs[0]}</i><i>{legs[1]}</i></div>
       </div>
 
       <div className="unet-foot">
-        <div className="u-tblock">
-          <b>TBlock</b>
-          <span><i>MDTA</i> attention across channels, so cost grows linearly with image size</span>
-          <span><i>GDFN</i> gated depthwise-conv feed-forward</span>
-        </div>
+        {blockInfo || (
+          <div className="u-tblock">
+            <b>TBlock</b>
+            <span><i>MDTA</i> attention across channels, so cost grows linearly with image size</span>
+            <span><i>GDFN</i> gated depthwise-conv feed-forward</span>
+          </div>
+        )}
         <div className="u-residual">Global residual: <b>Î = I + R(I)</b></div>
       </div>
       {note && <p className="diagram-note">{note}</p>}
@@ -140,39 +160,63 @@ export function UNetDiagram({ levels, refinement, frozenEncoder = false, inputLa
 const Chip = ({ children, tone = '' }) => <span className={`d-chip ${tone}`}>{children}</span>
 const Thin = () => <span className="d-thin" aria-hidden="true">→</span>
 
-export function NAFNetDiagram() {
-  return (
-    <div className="naf" role="figure" aria-label="NAFNet: stem convolution, NAFBlocks at one resolution, output convolution, with no global residual">
-      <div className="naf-main">
-        <Chip tone="io">Blurred page</Chip><Thin />
-        <Chip tone="conv">3 × 3 stem conv</Chip><Thin />
-        <div className="naf-stack">
-          <span>NAFBlock</span><span>NAFBlock</span><span>NAFBlock</span>
-          <b>× N at one resolution</b>
-        </div>
-        <Thin />
-        <Chip tone="conv">3 × 3 conv</Chip><Thin />
-        <Chip tone="io">Restored page</Chip>
-      </div>
-      <div className="naf-nores">
-        <span>No global residual from input to output</span>
-      </div>
+// NAFNet-GoPro-width32: encoder blocks [1, 1, 1, 28], one middle block,
+// decoder blocks [1, 1, 1, 1], width doubling per level, additive skips.
+export const NAFNET_LEVELS = [
+  { dim: 32, blocks: 1 },
+  { dim: 64, blocks: 1 },
+  { dim: 128, blocks: 1 },
+  { dim: 256, blocks: 28 },
+  { dim: 512, blocks: 1 },
+]
 
-      <div className="naf-block">
-        <h5>Inside one NAFBlock</h5>
-        <div className="naf-lane">
-          <em>Spatial</em>
-          <Chip>LayerNorm</Chip><Thin /><Chip>1 × 1 conv</Chip><Thin /><Chip>3 × 3 depthwise</Chip><Thin />
-          <Chip tone="key">SimpleGate</Chip><Thin /><Chip tone="key">SCA</Chip><Thin /><Chip>1 × 1 conv</Chip><Thin /><Chip tone="add">⊕ skip</Chip>
-        </div>
-        <div className="naf-lane">
-          <em>Channel</em>
-          <Chip>LayerNorm</Chip><Thin /><Chip>1 × 1 conv</Chip><Thin /><Chip tone="key">SimpleGate</Chip><Thin /><Chip>1 × 1 conv</Chip><Thin /><Chip tone="add">⊕ skip</Chip>
-        </div>
-        <div className="naf-defs">
-          <span><b>SimpleGate</b> X → X<sub>1</sub> ⊙ X<sub>2</sub>, splitting channels in half. Replaces GELU.</span>
-          <span><b>SCA</b> simplified channel attention: global pool, one 1 × 1 conv, multiply.</span>
-        </div>
+export function NAFBlockDetail() {
+  return (
+    <div className="naf-block">
+      <h5>Inside one NAFBlock</h5>
+      <div className="naf-lane">
+        <em>Spatial</em>
+        <Chip>LayerNorm</Chip><Thin /><Chip>1 × 1 conv</Chip><Thin /><Chip>3 × 3 depthwise</Chip><Thin />
+        <Chip tone="key">SimpleGate</Chip><Thin /><Chip tone="key">SCA</Chip><Thin /><Chip>1 × 1 conv</Chip><Thin /><Chip tone="add">⊕ skip</Chip>
+      </div>
+      <div className="naf-lane">
+        <em>Channel</em>
+        <Chip>LayerNorm</Chip><Thin /><Chip>1 × 1 conv</Chip><Thin /><Chip tone="key">SimpleGate</Chip><Thin /><Chip>1 × 1 conv</Chip><Thin /><Chip tone="add">⊕ skip</Chip>
+      </div>
+      <div className="naf-defs">
+        <span><b>SimpleGate</b> X → X<sub>1</sub> ⊙ X<sub>2</sub>, splitting channels in half. Replaces GELU.</span>
+        <span><b>SCA</b> simplified channel attention: global pool, one 1 × 1 conv, multiply.</span>
+      </div>
+    </div>
+  )
+}
+
+export function NAFNetDiagram({ note } = {}) {
+  return (
+    <div className="naf-wrap">
+      <UNetDiagram
+        levels={NAFNET_LEVELS}
+        block="NAFBlock"
+        latentName="Middle"
+        inputLabel="Blurred page · gray → 3 ch"
+        embedLabel="3 × 3 conv → 32 ch"
+        outLabel="3 × 3 conv → 3 ch"
+        skipLabel="add"
+        legs={['↓ 2 × 2 stride-2 conv', '↑ 1 × 1 conv + PixelShuffle']}
+        decDim={(i, l) => l.dim}
+        decBlocks={() => 1}
+        label="NAFNet-GoPro-width32: four-level encoder–decoder of NAFBlocks with additive skips and a global residual"
+        blockInfo={(
+          <div className="u-tblock">
+            <b>NAFBlock</b>
+            <span>No nonlinear activations: <i>SimpleGate</i> and <i>SCA</i> do the work of GELU and channel attention.</span>
+            <span>About 17.1 M parameters in total, most of them in the 28 blocks at the deepest encoder level.</span>
+          </div>
+        )}
+        note={note}
+      />
+      <div className="naf" style={{ marginTop: 12 }}>
+        <NAFBlockDetail />
       </div>
     </div>
   )
@@ -207,7 +251,7 @@ export function MPRNetDiagram() {
       <p className="diagram-note">
         Each stage sees the image at a finer granularity. Supervised Attention Modules weight the features
         passed forward by how good that stage’s own prediction already is, and Cross-Stage Feature Fusion
-        carries encoder–decoder features into the next stage. Weights: public GoPro release, epoch 31, unchanged.
+        carries encoder–decoder features into the next stage. Starts from the official GoPro checkpoint and is fine-tuned end to end, with the loss summed over all three stage outputs.
       </p>
     </div>
   )
@@ -280,7 +324,7 @@ export function ModelDiagram({ id }) {
         />
       )
     case 'nafnet':
-      return <NAFNetDiagram />
+      return <NAFNetDiagram note="Published multi-scale NAFNet-GoPro-width32, loaded from the official weights with every key required to match. Fine-tuning trains all parameters." />
     case 'mprnet':
       return <MPRNetDiagram />
     case 'physics':

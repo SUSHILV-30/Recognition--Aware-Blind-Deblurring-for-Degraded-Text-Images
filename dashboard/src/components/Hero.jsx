@@ -80,8 +80,8 @@ export default function Hero() {
         <div className="wrap">
           <div className="stat"><b className="gain">96.9%</b><span>OCR character accuracy at blur Level 5 after fine-tuning, up from 0%</span></div>
           <div className="stat"><b className="gain">+6.63 dB</b><span>PSNR gain over the blurred input at Level 5 (15.35 → 21.98 dB)</span></div>
-          <div className="stat"><b>+9.63 dB</b><span>Largest fine-tuning gain, NAFNet at Level 3</span></div>
-          <div className="stat"><b>15.55 dB</b><span>Domain-shift penalty for MPRNet moving from GoPro to defocused text</span></div>
+          <div className="stat"><b>60.9 → 7.8%</b><span>OCR character error rate at Level 4 after NAFNet fine-tuning</span></div>
+          <div className="stat"><b>15.55 dB</b><span>Domain-shift penalty for zero-shot MPRNet moving from GoPro to defocused text</span></div>
         </div>
       </div>
     </>

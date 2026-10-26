@@ -439,6 +439,8 @@ dialog.lightbox button {
 .ocr-cell span { position: relative; }
 .ocr-cell.pending { color: var(--muted); font-weight: 400; font-size: 13px; }
 .ocr-cell.pending::before { background: none; border: 1px dashed var(--rule); }
+.ocr-cell.own a { color: var(--lens); font-weight: 600; text-decoration: none; position: relative; }
+.ocr-cell.own a:hover { text-decoration: underline; }
 .pending-list { display: flex; flex-wrap: wrap; gap: 8px; }
 
 /* ------------------------------------------------------------------
@@ -609,6 +611,14 @@ dialog.lightbox button {
 .naf-nores::before { content: ""; flex: 1; max-width: 120px; border-top: 2px dashed var(--loss); opacity: .6; }
 .naf-nores span { text-decoration: line-through; text-decoration-thickness: 1px; }
 .naf-block { margin-top: 18px; border-top: 1px solid var(--rule); padding-top: 16px; display: grid; gap: 10px; }
+.naf > .naf-block:first-child { margin-top: 0; border-top: 0; padding-top: 0; }
+.audit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.audit .contrast { margin-top: 14px; }
+.caveats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 24px; }
+.caveats div { border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 8px; padding: 12px 14px; background: var(--surface); font-size: 14px; }
+.caveats b { display: block; margin-bottom: 2px; }
+.caveats span { color: var(--muted); }
+@media (max-width: 860px) { .audit { grid-template-columns: minmax(0, 1fr); } }
 .naf-block h5 { margin: 0; font-size: 14px; }
 .naf-lane { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
 .naf-lane em { font-style: normal; font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; width: 64px; }
@@ -870,3 +880,15 @@ dialog.lightbox button {
 .mp-pager small { color: var(--muted); font-size: 13px; }
 .mp-pager b { font-size: 17px; }
 @media (max-width: 640px) { .mp-pager { grid-template-columns: minmax(0, 1fr); } .mp-pager a.nx { text-align: left; } }
+
+/* Sample browser (HDC Levels 9–13) */
+.sample-stats { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: var(--radius-m); overflow: hidden; margin-bottom: 16px; }
+.sample-stats div { background: var(--surface); padding: 12px 14px; }
+.sample-stats b { display: block; font-size: 20px; letter-spacing: -0.02em; }
+.sample-stats b.gain { color: var(--gain); }
+.sample-stats span { font-size: 12.5px; color: var(--muted); }
+@media (max-width: 860px) { .sample-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.ocr-text { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.ocr-text div { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius-m); padding: 14px 16px; }
+.ocr-text small { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; font-weight: 700; color: var(--muted); }
+.ocr-text pre { margin: 8px 0 0; font-size: 18px; line-height: 1.5; white-space: pre-wrap; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
